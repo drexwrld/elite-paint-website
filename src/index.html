@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
-      /* Ensure the background matches the theme before React loads */
+      /* Smooth background transition for a luxury feel */
       body {
         margin: 0;
         background-color: #ffffff;
         font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
       }
     </style>
   </head>
@@ -25,8 +26,8 @@
     
     <!-- 
       FIXED PATH: 
-      Do NOT include the folder name (elite-paint-website) here.
-      Vite serves the 'src' folder relative to your project root.
+      Using absolute path /src/main.jsx ensures Vite finds the entry point 
+      regardless of project folder nesting.
     -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
